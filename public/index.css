@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body{min-height: 100vh;display: flex;flex-direction: column;}
+
+
+/*Styles for Homepage*/
+
+#HomePage{display: flex;flex-direction: column;}
+#HomePage_image{position: relative; margin-bottom: 100px;height: 850px;}
+#homepage_banner_background{position: absolute;width: 100%;}
+#homepage_banner_steps{position: absolute;width: 100%;}
+#placeholder_one{position:absolute;right: 210px;top: 130px;z-index: 1;width: 17%;}
+#placeholder_two{position:absolute;right: 630px;top: 300px;z-index: 1;}
+#placeholder_three{position:absolute;right: 300px;top: 480px;z-index: 1;}
+#placeholder_four{position:absolute;right: 800px;top: 500px;z-index: 1;}
+#HomePage_image_info{display: flex;flex-direction: column;position: absolute; right: 1150px;top: 200px;}
+.HomePage_banner_heading{color: #003d29;font-size: 84px;font-family: 'Arimo', sans-serif;;margin: 0;}
+.HomePage_banner_pre{font-size: 25px;margin-top: 30px;}
+#HomePage_banner_div{width: 250px;height: 70px;background-color: #003d29;border-radius: 35px;color: white;font-size: 20px;display: flex
+  ;justify-content: center;align-items: center;font-weight: 400;font-family: 'Arimo', sans-serif;line-height: 24px;padding: 16px 36px;letter-spacing: 2px;}
+
+
+/*Styles for Header*/
+
+#Nav{background-color: white;display: flex;justify-content: space-around;align-items: center;height: 70px;}
+#HomePage_logo:link,#HomePage_logo:visited,#HomePage_logo:hover,#HomePage_logo:active{color: #003d29;text-decoration: none;margin-left: 20px;font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 600;}
+#HomePage_address{color: black; text-decoration: none;margin-left: 20px;font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 400;}
+#form{display: flex;width: 60%;height: 60%;margin-left: 20px;}
+#homePage_select{height: 100%;width: 100px;}
+#item_submit{width: 100%;position: relative;}
+#item_submit input{height: 100%;width: 100%;}
+#Dropdown_items_search_bar{width: 100%;background-color: white;display: flex;flex-direction: column;position: absolute;top: 50px;z-index: 1;}
+#Dropdown_items_search_bar a{color: black;font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 400;margin-bottom: 5px;cursor: pointer;}
+#Dropdown_items_search_bar a:hover{background-color: lightgray;}
+#search_icon{width: 40px;height: 100%;}
+#HomePage_SignIn{color: black;font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 400;text-decoration: none;}
+#homepage_SignIn_Dropdown{position: relative;display: inline-block;}
+#homepage_singIn_Dropdown_options{position: absolute; right: -150px;display: none;
+  background-color: #f9f9f9;width: 500px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);padding: 12px 16px;
+  }
+#homepage_SignIn_Dropdown:hover #homepage_singIn_Dropdown_options{display: flex;flex-direction: column;z-index:2;top: 30px;}
+#homepage_singIn_Dropdown_options_singIn{width: 100%;display: flex;flex-direction: column;align-items: center;}
+#homepage_singIn_Dropdown_options_singIn button{width: 150px;height: 40px;border-radius: 5px;background-color:#003d29 ;}
+#homepage_singIn_Dropdown_options_singIn button a{text-decoration: none;color: white;}
+#homepage_singIn_Dropdown_options_first{width: 100%;display: flex;}
+#homepage_singIn_Dropdown_options_first hr{margin-right: 0;margin-left: 105.5px;}
+#homepage_singIn_Dropdown_options_first_wishlist{display: flex;flex-direction: column;}
+#homepage_singIn_Dropdown_options_first_wishlist p {font-family: 'Inter', sans-serif;font-size: 15px;margin: 0;margin-bottom: 2px;}
+#homepage_singIn_Dropdown_options_first_account{display: flex;flex-direction: column;font-family: 'Inter', sans-serif;font-size: 15px;margin: 0;margin-right: 50px;margin-bottom: 90px;}
+#homepage_singIn_Dropdown_options_first_account p{margin-bottom: 3px;color: #003d29;}
+#homepage_singIn_Dropdown_options_first_account a:link,a:visited,a:active{margin-bottom: 3px;color: black;text-decoration: none;}
+#homepage_singIn_Dropdown_options_first_account a:hover{color: orangered;text-decoration: solid;}
+.Perfumes{display: flex;flex-direction: column;width: 400px;height: 500px;margin-right: 30px;font-family: 'Arimo', sans-serif;}
+.Furniture{display: flex;flex-direction: column;width: 400px;height: 500px;margin-right: 30px;font-family: 'Arimo', sans-serif;}
+.Lighting{display: flex;flex-direction: column;width: 400px;height: 500px;margin-right: 30px;font-family: 'Arimo', sans-serif;}
+.Laptops{display: flex;flex-direction: column;width: 400px;height: 500px;margin-right: 30px;font-family: 'Arimo', sans-serif;}
+.homepage_card_image{width: 100%;height: 70%;}
+.homepage_card_image img{width: 100%;height: 100%;}
+.homepage_card{display: flex;font-size: 15px;}
+.homepage_card p{font-family: 'Inter', sans-serif;}
+.homepage_card_price{margin-left: auto;}
+.homepage_card_block{display: flex;justify-content: space-between;margin-bottom: 50px;white-space: nowrap;overflow: auto;}
+.homepage_card_block::-webkit-scrollbar{height: 0.25em;}
+.homepage_card_block::-webkit-scrollbar-track{background-color: white;}
+.homepage_card_block::-webkit-scrollbar-thumb{background-color: rgb(0,0,0);}
+.homepage_card_block::-webkit-scrollbar-thumb:hover{background-color: rgb(83, 83, 83);}
+.homepage_card_descr{font-size: 15px;font-family: 'Inter', sans-serif;font-weight: 400;}
+#main_title:link,#main_title:visited,#main_title:hover,#main_title:active{color: black;text-decoration: none;}
+#cart{width: 5%;display: flex;flex-direction: column;}
+#cart_value{height: 50%;display: flex;}
+#cart_value p {margin: 0;margin-left: 10px;font-size:20px;margin-top: 20px;align-items: end;}
+#cart_main{display: flex;}
+#cart_main p{font-family: 'Arimo', sans-serif;font-size: 15px;font-weight: 100;}
+#cart_image{width: 50%;margin-bottom: 10px;}
+#cart_image img{height: 80%;width: 80%;}
+#cart_link{display: flex;align-items: center;}
+
+/*Styles for Sign In*/
+
+#signin_username{display: flex;flex-direction: column;margin: 100px auto;width: 450px;}
+#signin_username_info{display: flex;flex-direction: column;border:1.5px solid lightgray;border-radius: 5px;
+ padding: 40px;}
+#signin_username_info h3{margin: 0;margin-bottom: 10px;font-family: 'Arimo', sans-serif;font-size: 30px;font-weight: 400;}
+#signIn_form{display: flex;flex-direction: column;}
+#signIn_form label{font-family: 'Arimo', sans-serif;font-size: 15px;font-weight: 200;}
+#signIn_form input{margin-top: 5px;}
+#signIn_form_submit{background-color: #106146;height: 30px;margin-top: 10px;font-family: 'Arimo', sans-serif;font-size: 15px;font-weight: 400;}
+#signin_username_info pre{font-family: 'Inter', sans-serif;font-size: 15px;}
+#signin_username_info a:link {color: blue;text-decoration: none;font-family: 'Inter', sans-serif;font-size: 15px;}
+#signin_username_info a:visited {color: blue; text-decoration: none;}
+#signin_username_info a:hover {color: orange;text-decoration: solid;}
+#signin_username_info a:active {color: blue; text-decoration: none;}
+#signIn_form input{width: 100%;margin-bottom: 10px;height: 25px;}
+#signin_usename_signup{display: flex;flex-direction: column;}
+#signin_usename_signup button{background-color: white;height: 30px;}
+#signin_usename_signup button a:link{color: black;text-decoration: none;font-family: 'Inter', sans-serif;font-size: 15px;}
+#signin_usename_signup button a:visited{color: black;text-decoration: none;}
+#signin_usename_signup button a:hover{color: black;text-decoration: none;}
+#signin_usename_signup button a:active{color: black;text-decoration: none;}
+#signin_usename_signup_text{display: flex;align-items: center;height: 50px;font-family: 'Inter', sans-serif;font-size: 15px;}
+#signin_usename_signup_text hr{rotate: 90deg;height: 150px;}
+
+
+/*Styles for Sign Up*/
+
+#signUp{display: flex;flex-direction: column;margin: 100px auto;width: 450px;border:1.5px solid lightgray;border-radius: 5px;padding: 20px;}
+#signUp h4{font-family: 'Arimo', sans-serif;font-size: 30px;margin-bottom: 20px;}
+#signUp p{font-family: 'Inter', sans-serif;font-size: 15px;}
+#signUp_form{display: flex;flex-direction: column;}
+#signUp_form input {height: 25px;margin-bottom: 15px;}
+#signUp_form label {margin-bottom: 5px;font-family: 'Arimo', sans-serif;font-size: 15px;font-weight: 200;}
+#signup_continue{background-color: #106146;height: 30px;font-family: 'Arimo', sans-serif;font-size: 15px;font-weight: 400;}
+#signUp a:link {color: blue;text-decoration: none;}
+#signUp a:visited {color: blue;text-decoration: none;}
+#signUp a:hover {color: orange;text-decoration: solid;}
+#signUp a:active {color: blue;text-decoration: none;}
+
+
+/*Styles for Products of a particular Category*/
+
+#product_card_link{text-decoration: none;}
+.product_card{display: flex;height: 100%;border:1.5px solid lightgray;flex-direction: column;border-radius: 10px;}
+.product_card:hover{box-shadow: 2px 2px 5px 5px lightblue;cursor: pointer;}
+.product_card_image{height: 70%;width: 100%;margin-bottom: 5px;}
+.product_card_image img{width: 100%;height: 100%;}
+.product_card_info{display: flex;flex-direction: column;}
+.product_card_info h2{font-family: 'Arimo', sans-serif;font-size: 25px;font-weight: 400;margin-left: 10px;}
+.product_card_info p {font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 350;margin-left: 10px;margin-bottom: 2px;margin-top: 2px;}
+#products{margin: 100px 200px;}
+#products_collection{display: grid;grid-template-rows:repeat(2,400px);grid-template-columns: repeat(3,500px);gap: 50px;}
+#products > h1{font-family: 'Arimo', sans-serif;font-size: 80px;font-weight: 500;}
+
+
+
+
+/*Styles for a single Product*/
+
+#product_info{display: flex;flex-direction: column;}
+#product_info_top{display: flex;height: 50%;}
+#product_info_image{width: 50%;display: flex;flex-direction: column;}
+#product_info_image_main{width: 500px;height: 500px;margin-left: 200px;}
+#product_info_image_main img{width: 100%;height: 100%;}
+#product_info_image_collection{display: flex;}
+.product_info_image_change{width: 70px;height: 70px; margin-right: 20px;}
+.product_info_image_change img{width: 100%;height: 100%;}
+#product_info_main{display: flex;flex-direction: column;}
+#product_info_main hr{width: 100%;}
+#product_info_main_info{display: flex;flex-direction: column;font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 300;}
+#product_info_main_info h2{font-family: 'Arimo', sans-serif;font-size: 45px;font-weight: 500;margin-bottom: 5px;}
+#product_info_main_info p{margin: 5px;}
+#product_info_main_price{display: flex;flex-direction: column;}
+#product_info_main_price h5{font-family: 'Arimo', sans-serif;font-size: 40px;font-weight: 500;margin-bottom: 5px;margin-top: 10px;}
+#product_info_main_price p {font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 200;margin-bottom: 5px;margin-top: 5px;}
+#product_info_change_cart_modify{display: flex;margin: 10px 0px;}
+#product_info_buy_now{cursor: pointer;;width: 200px;height: 60px;background-color: #003d29;border-radius: 35px;color: white;font-size: 20px;display: flex
+  ;justify-content: center;align-items: center;font-weight: 400;font-family: 'Arimo', sans-serif;line-height: 24px;padding: 16px 36px;letter-spacing: 2px;margin-right: 20px;}
+#product_info_add_cart{cursor: pointer;;width: 200px;height: 60px;background-color: white;border-radius: 35px;color: #003d29;font-size: 20px;display: flex
+  ;justify-content: center;align-items: center;font-weight: 400;font-family: 'Arimo', sans-serif;line-height: 24px;padding: 16px 36px;letter-spacing: 2px;border: 1px solid #003d29;}
+  #product_info_add_wishlist{cursor: pointer;;width: 200px;height: 60px;background-color: white;border-radius: 35px;color: #003d29;font-size: 20px;display: flex
+    ;justify-content: center;align-items: center;font-weight: 400;font-family: 'Arimo', sans-serif;line-height: 24px;padding: 16px 36px;letter-spacing: 2px;border: 1px solid #003d29;}
+  
+  #product_info_icons{margin: 10px 0px;}
+  #product_info_icons img{margin: 5px 0px;margin-right: 20px;}
+#product_info_delivery{display: flex;flex-direction: column;height: 200px;margin-top: 10px;}
+.free_delivery{display: flex;height: 50%;}
+.free_delivery_icon{width: 10%;}
+.free_delivery_icon img{width: 100%;height: 50%;}
+.free_delivery_descr h6{font-weight: 400;font-family: 'Arimo', sans-serif;font-size:30px;margin: 0;}
+.free_delivery_descr p {font-weight: 300;font-family: 'Inter', sans-serif;font-size: 20px;margin: 0;margin-top: 5px;}
+#product_reviews{display: flex;margin-left: 100px;margin-top: 50px;}
+#product_reviews_ratings hr{width: 100%;}
+#product_reviews_ratings,#product_reviews_ratings_overall,#product_reviews_ratings_write_review{display: flex;flex-direction: column;}
+#product_reviews_ratings{margin-right: 70px;width: 30%;}
+#product_reviews_ratings_overall p{font-weight: 400;font-family: 'Arimo', sans-serif;font-size:40px}
+#product_reviews_ratings_overall div{display: flex;}
+#product_reviews_ratings_overall div p{font-weight: 200;font-family: 'Inter', sans-serif;font-size:20px;margin-top: 2px;}
+#product_reviews_ratings_write_review h3{font-family: 'Arimo', sans-serif;font-size: 20px;font-weight: 400;margin-bottom: 0px;}
+#product_reviews_ratings_write_review p{font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 200;margin-bottom: 0px;}
+#product_reviews_ratings_write_review button{display: flex;justify-content: center;align-items: center;color: #003d29;border: 2px solid #003d29;
+  background-color: white;border-radius: 20px;width: 200px;height: 50px;
+  font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 400;margin-top: 15px;cursor: pointer;margin-bottom: 15px; }
+  #product_reviews_ratings_write_review button a{text-decoration: none;}
+#product_reviews_collection{display: flex;flex-direction: column;padding-top: 40px;margin-left: 30px;width: 70%;}
+.review_card{display: flex;flex-direction: column;}
+.review_card_name{display: flex;}
+.review_card_name img{margin-right: 10px;width: 30px;height: 30px;}
+.review_card_name p{font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 300;margin-top: 0px;}
+.review_card_star{display: flex;}
+.review_card_star p {font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 500;margin-top: 0px;}
+.review_card > p{font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 300;margin-top: 0px;}
+.review_card_star_stars{display: flex;}
+.review_card_star_stars img{margin-right: 10px;width: 25px;height: 25px;}
+
+
+/*Styles for Cart*/
+
+.cart_product{display: flex;height: 300px;border-bottom: 1px solid lightgray;margin-bottom: 30px;}
+.cart_product_image{height: 100%;width: 30%;margin-right: 20px;}
+.cart_product_image img{width: 100%;height: 100%;}
+.cart_product_details{display: flex ;width: 100%;font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 400;}
+.cart_product_details_final_price{margin-left: auto;display: flex;justify-content: center;align-items: start;}
+.cart_product_details_main{display: flex;flex-direction: column;}
+.cart_product_details_main h4{font-weight: 400;font-family: 'Arimo', sans-serif;font-size:25px;margin: 0;}
+.cart_product_details_main p{font-weight: 300;font-family: 'Inter', sans-serif;font-size:20px;margin: 0;margin-top: 10px;}
+.cart_product_details_main_inStock{font-size: 17px;color: green;font-weight: 700;font-family: 'Inter', sans-serif;}
+.cart_product_details_main_select_qty{display: flex;margin-top: 70px;}
+.cart_product_details_main_select{width: 40%;margin: 10px 0px}
+#final_cart{display: flex;flex-direction: column;margin: 50px 200px}
+#final_cart_descr{display: flex; margin-bottom: 10px;}
+#final_cart_descr h2{font-family: 'Arimo', sans-serif;font-size: 45px;font-weight: 500;margin-bottom: 0;}
+#final_cart_descr_price{margin-left: auto;font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 300;display: flex;align-items: end;}
+#final_cart_descr_price p{margin-bottom: 2px;margin-right: 15px;}
+#final_cart hr{height: 10px;width: 50px;}
+#final_cart_items{display: flex;flex-direction: column;border: 1px solid lightgray;border-radius: 5px;padding: 25px;}
+
+/*Styles for Orders*/
+
+#orders_collection{display: flex;flex-direction: column;justify-content: space-between;margin: 50px 25%;}
+#orders_collection h1{font-family: 'Arimo', sans-serif;font-size: 45px;font-weight: 500;}
+.order_card{display: flex;flex-direction: column;margin-bottom: 50px;height: 350px;border: 1px solid gray;border-radius: 20px;width: 1000px;}
+.order_card_top{display: flex;background-color: lightgray;height: 20%;;padding: 10px;border-top-left-radius: 20px;
+border-top-right-radius: 20px;}
+.order_card_top div{display: flex;flex-direction: column;margin-left: 0px;}
+.order_card_top div p{margin-bottom: 0;font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 400;margin-top: 5px;margin-left: 50px;}
+.order_card_bottom{display: flex;height: 70%;padding: 20px;}
+.order_card_bottom_main{display: flex;width: 70%;}
+.order_card_bottom_image{width: 30%;height: 60%;margin-top: 30px;margin-right: 10px;}
+.order_card_bottom_image img{height: 100%;width: 100%;}
+.order_card_bottom_info{display: flex;flex-direction: column;margin-top: 30px;}
+.order_card_bottom_info a{font-family: 'Arimo', sans-serif;font-size: 25px;font-weight: 500;}
+.order_card_bottom_info p{font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 300;}
+.order_card_bottom_buttons{display: flex;flex-direction: column;margin-left: auto;width: 30%;}
+.order_card_bottom_buttons div{display: flex;justify-content: center;align-items: center;background-color: white;margin:5px 0px;
+  width: 100%;height: 50px;border-radius: 10px;border: 1px solid gray;cursor: pointer;}
+.order_card_bottom_buttons div p {font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 400;color: black;margin:5px 0px;}
+
+
+/*Styles for Wishlist*/
+#wishlist{display: flex;flex-direction: column;margin: 100px 200px;width: 80%;}
+#wishlist_top{display: flex;height: 50px;padding: 10px;height: 100px;align-items: center;}
+#wishlist_top h3 {font-family: 'Arimo', sans-serif;font-size: 45px;font-weight: 500;}
+#wishlist_top p {margin-left: auto;font-family: 'Arimo', sans-serif;font-size: 35px;font-weight: 300;}
+#wishlist_bottom{display: flex;border: 1px solid gray;}
+#wishlist_bottom_list{display: flex;flex-direction: column;width: 20%;}
+#wishlist_bottom_list_value{display: flex;flex-direction: column;padding: 20px;width: 80%;}
+.wishlist_items{display: flex;justify-content: start;align-items: center;height: 50px; cursor: pointer;}
+.wishlist_items_selected{display: flex;justify-content: start;align-items: center;height: 50px; cursor: pointer;background-color: lightgray;}
+.wishlist_items p{font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 400;color: black;margin-left: 20px;}
+.wishlist_items_selected p{font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 600;color: black;margin-left: 20px;}
+.wishlist_card{display: flex;width: 100%;height: 300px;padding: 20px;}
+.wishlist_card_image{height: 70%;width: 20%;margin-right: 20px;}
+.wishlist_card_image img{height: 100%;width: 100%;}
+.wishlist_card_info{display: flex;flex-direction: column;width: 50%;}
+.wishlist_card_info h3 {font-family: 'Arimo', sans-serif;font-size: 25px;font-weight: 500;margin: 5;margin-bottom: 0;}
+.wishlist_card_info p{font-family: 'Inter', sans-serif;font-size: 17.5px;font-weight: 300;margin-bottom: 0;}
+.wishlist_card_last{width: 30%;display: flex;align-items: center;}
+.wishlist_card_last_add_cart{display: flex;justify-content: center;align-items: center;width: 70%;height: 40px;background-color:white;border: 2px solid #003d29;border-radius: 20px;cursor: pointer;}
+.wishlist_card_last_add_cart p{font-family: 'Inter', sans-serif;font-size: 25px;font-weight: 300;}
+#wishlist_top_create_list{display: none;}
+#wishlist_top_top{margin-left: auto;}
+#wishlist_top_top p{margin-bottom: 0px;}
+#wishlist_top_top:hover #wishlist_top_create_list{display: flex;flex-direction: column;}
+
+/*Styles for Product Review*/
+#review{display: flex;flex-direction: column;margin: 50px auto;width: 800px;height: 700px;}
+#review > p{font-family: 'Arimo', sans-serif;font-size: 40px;font-weight: 500;margin: 15px;}
+#review_product_info{width: 100%;height: 200px;display: flex;}
+#review_product_info img{width: 30%;height: 100%;margin-right: 10px;}
+#review_rating{width: 100%;height: 100px;}
+#review_product_info > p,#review_rating > p,#review_form label{font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 600;margin: 10px 0px;}
+#review_rating_stars{display: flex;margin-top: 15px;}
+#review_rating_stars img{margin-right: 7px;cursor: pointer;}
+#review_form input{width: 100%;height: 20px;margin: 15px 0px;}
+#review_form textarea{width: 100%;height: 300px;margin: 15px 0px;}
+#review_form button{display: flex;justify-content: center;align-items: center;color: #003d29;border: 2px solid #003d29;
+  background-color: white;border-radius: 20px;margin-right: 0;margin-left: auto;width: 100px;height: 30px;
+  font-family: 'Inter', sans-serif;font-size: 15px;font-weight: 400;margin-top: 15px;cursor: pointer;}
+
+  #product_info_wishlist{width: 200px;height: 60px;border-radius: 20px;border: 2px solid #003d29;background-color: white;color: black;
+    font-family: 'Inter', sans-serif;font-size: 20px;font-weight: 400;display: flex;justify-content: center;align-items: center;margin-left: 10px;}
