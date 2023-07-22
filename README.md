@@ -1,6 +1,6 @@
 Hello.
 
-The working video link of the application is: https://drive.google.com/file/d/1kbV8hz8zi6FLGqDeFuMa6OcXP4FARBaL/view?usp=sharing
+The working video link of the application is: https://drive.google.com/file/d/17dfkgdYPrwb4IXdBrG9zbwgku24PTY-C/view?usp=sharing
 
 The E-commerce app makes use of the following technologies:
 
